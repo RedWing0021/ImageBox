@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://redwing0021.github.io/ImageBox.git",
+  "homepage": "https://github.com/RedWing0021/ImageBox.git",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "firebase": "^10.8.0",
-    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.1",
@@ -29,6 +28,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "gh-pages": "^6.1.1",
     "tailwindcss": "^3.4.1",
     "vite": "^5.1.0"
   }
