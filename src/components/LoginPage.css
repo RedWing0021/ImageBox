@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+  }
+  
+  .login-box {
+    background-color: #fff;
+    height: 20em;
+    width: 35em;
+    padding: 5em;
+    border: 1px solid #ddd;
+    position: relative;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(156, 156, 156);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .login-box h2 {
+    text-align: center;
+    margin-top: 25px; /* Change the font family here */
+  }
+  
+  
+  .form input{
+    width: 75%;
+  padding: 1em;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }
+.btn{
+    margin-top: 25px;
+}
+  
