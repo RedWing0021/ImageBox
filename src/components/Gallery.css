@@ -35,6 +35,10 @@
         -moz-column-width: 33%;
         column-width: 33%;
     }
+    .model{
+        height: auto;
+    }
+
 }
 
 @media(max-width:480px){
@@ -45,6 +49,9 @@
         -webkit-column-width: 50%;
         -moz-column-width: 50%;
         column-width: 50%;
+    }
+    .model{
+        height:auto;
     }
 }
 
