@@ -22,7 +22,7 @@ function LoginPage() {
             setError('');
             // Redirect to the home page
             // useHistory('/');
-            window.location.href = '/';
+            window.location.href = '/ImageBox';
         } catch (error) {
             setError(error.message);
             console.error('Login error:', error.message);
