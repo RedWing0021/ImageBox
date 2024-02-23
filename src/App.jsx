@@ -23,8 +23,13 @@ function App() {
         </Router> */}
          <Routes>
                     <Route path='/' element={<>
-                       <Navbar />
-                       <Gallery />
+                    <div className='contain'>
+                      
+                       <Navbar/>
+                       
+                       <Gallery/>
+                    </div>
+                    
                        </>} />
                     <Route path="/Login" element={<LoginPage/>} />
 

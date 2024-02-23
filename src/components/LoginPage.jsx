@@ -22,7 +22,7 @@ function LoginPage() {
             setError('');
             // Redirect to the home page
             // useHistory('/');
-            window.location.href = '/ImageBox';
+            window.location.href = '/';
         } catch (error) {
             setError(error.message);
             console.error('Login error:', error.message);
@@ -31,6 +31,7 @@ function LoginPage() {
 
 
     return (
+        <div className="body-1">
         <div className="login-box" style={{ textAlign: 'center', marginTop: '50px' }}>
             <h2>Login Page</h2>
             <form onSubmit={handleLogin} className='form'>
@@ -53,6 +54,7 @@ function LoginPage() {
                 <button className="btn" type="submit">Login</button>
             </form>
             {error && <p style={{ color: 'red' }}>{error}</p>}
+        </div>
         </div>
     );
 }

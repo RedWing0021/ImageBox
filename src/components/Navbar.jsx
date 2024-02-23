@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 // agin note to import
 import "./Navbar.css"
 
+import add from '../img/add.png'
+
 
 import { storage } from './config';
 import { ref, uploadBytes } from "firebase/storage";
@@ -74,6 +76,7 @@ function Navbar() {
 
 };
 
+
   return (
     <div>
         <nav>
@@ -82,14 +85,17 @@ function Navbar() {
             <h1 >ImageBox</h1>
             </a>
           </div>
-          <div>
-          <input type="file"  accept="image/*" multiple onChange={filechange} /> 
+          <div className='choose-file'>
+          <input className='fileInput' id='fileInput' type="file"  accept="image/*" multiple onChange={filechange} /> 
+          <img src={add} className='select' id='select'/>
           </div>
+          
           <div className='btn-div'>
           <button className="btn" onClick={Click}>{user ? 'Upload' : 'Login'}</button>
           </div>
         
         </nav>
+        
     </div>
   )
 }

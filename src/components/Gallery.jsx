@@ -64,7 +64,7 @@ useEffect(() => {
   }
 
   return (
-    <div>
+    <div className="body-2">
     <div className={model ? "model open":"model"} onClick={()=> setModel(false)}>
       <img src={tempimgSrc} />
     </div>

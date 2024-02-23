@@ -70,7 +70,7 @@ input[type="file"]::file-selector-button {
 nav{
     display: flex;
     justify-content: space-between;
-    max-width: 1920px;
+    /* max-width: 1920px; */
     align-items: center;
 
     margin: 0 auto;
@@ -82,6 +82,33 @@ nav{
     z-index: 1000; /* Adjust the z-index as needed */
     background-color: #fff; 
     box-shadow: 0 0.188em 1.550em rgb(156, 156, 156);
+    flex: 0 0 auto; /* Non-flexible Navbar */
+  height: 60px; /* Fixed height of the Navbar */
     
 } 
+
+.select{
+    display: none;
+    width: 40px;
+    align-items: center;
+}
+.fileInput{
+    display: none;
+}
+
+
+@media(min-width:992px){
+    .fileInput{
+        display: block;
+
+    }
+}
+@media(max-width:991px){
+    .select{
+        display: block;
+        cursor: pointer;
+
+    }
+
+}
 
